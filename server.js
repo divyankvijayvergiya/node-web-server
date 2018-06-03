@@ -39,13 +39,19 @@ app.get('/', (req, res)=>{
   //res.send('<h1>Hello Express!</h1>');
   res.render('home.hbs',{
     pageTitle: 'Home',
-    msg: 'Welcome to the Home',
+    msg: 'Welcome to the Home'
    });
 });
 
 app.get('/about', (req, res) => {
   res.render('about.hbs', {
-    pageTitle: 'About Page',
+    pageTitle: 'About Page'
+  });
+});
+
+app.get('/projects', (req, res) =>{
+  res.render('projects.hbs',{
+    pageTitle: 'Projects'
   });
 });
 
